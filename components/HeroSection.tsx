@@ -1,16 +1,25 @@
-import Image from "next/image"
-import Link from "next/link"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faYoutube, faMedium, faNpm } from '@fortawesome/free-brands-svg-icons'
+import Image from "next/image";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithub,
+  faYoutube,
+  faMedium,
+  faNpm,
+} from "@fortawesome/free-brands-svg-icons";
 
 export function HeroSection() {
   const socialLinks = [
-    { icon: faLinkedin, href: "https://www.linkedin.com/in/haritha-senevirathne-61809515b/" },
+    {
+      icon: faLinkedin,
+      href: "https://www.linkedin.com/in/haritha-senevirathne-61809515b/",
+    },
     { icon: faGithub, href: "https://github.com/Harisene" },
     { icon: faYoutube, href: "https://www.youtube.com/@codewithharitha" },
     { icon: faMedium, href: "https://harithsenevi4.medium.com/" },
     { icon: faNpm, href: "https://www.npmjs.com/~harisene" },
-  ]
+  ];
   return (
     <div className="mb-20">
       <div className="flex flex-col md:flex-row gap-8 items-center">
@@ -25,19 +34,24 @@ export function HeroSection() {
             />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left mb-2">
-            Hello! I'm Haritha Senevirathne
+            Hello! I&apos;m Haritha Senevirathne
           </h1>
-          <p className="text-xl text-muted-foreground mb-6 text-center md:text-left">Software Engineer</p>
+          <p className="text-xl text-muted-foreground mb-6 text-center md:text-left">
+            Software Engineer
+          </p>
           <div className="flex space-x-4">
             {socialLinks.map((item, index) => (
-              <Link 
-                key={index} 
-                href={item.href} 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <Link
+                key={index}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center border border-gray-200 rounded-full hover:bg-gray-100 transition-colors"
               >
-                <FontAwesomeIcon icon={item.icon} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  className="w-5 h-5 text-gray-600 hover:text-gray-900"
+                />
               </Link>
             ))}
           </div>
@@ -51,8 +65,10 @@ export function HeroSection() {
             </div>
           </div>
           <p className="text-muted-foreground">
-            Experienced Software Engineer with 4+ years of expertise in React, React Native, Next.js, Node.js, AWS, and
-            TypeScript. Skilled in developing scalable, high-performance applications and managing cloud infrastructure to deliver impactful solutions.
+            Experienced Software Engineer with 4+ years of expertise in React,
+            React Native, Next.js, Node.js, AWS, and TypeScript. Skilled in
+            developing scalable, high-performance applications and managing
+            cloud infrastructure to deliver impactful solutions.
           </p>
           <div className="flex gap-4 mt-6">
             <Link href="/experience">
@@ -69,6 +85,5 @@ export function HeroSection() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

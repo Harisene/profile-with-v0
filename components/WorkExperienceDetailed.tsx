@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { MapPin, Calendar } from 'lucide-react'
+import { SkillTag } from "./SkillTag"
 
 const experiences = [
   {
@@ -13,7 +14,8 @@ const experiences = [
       "Contributing to product prioritisation meetings to align development efforts with business goals.",
       "Building development roadmaps and release plans to ensure timely delivery of features.",
       "Building unit test suits."
-    ]
+    ],
+    skills: ["React", "React Native", "Firebase", "TypeScript"]
   },
   {
     role: "Software Engineer",
@@ -27,7 +29,8 @@ const experiences = [
       "Reduced data response time to 2 milliseconds by re-architecting **DynamoDB** data records for a specific feature, achieving an 80% improvement in response time.",
       "Refactored and optimized the existing **React Native** codebase, for better code quality. Built custom hooks to decouple the presentation layer from the business layer.",
       "Managed **AWS** cloud infrastructure with **NodeJS**, including **S3** storage, **API Gateway**, **Cognito**, **AppSync**, **SNS**, **SQS**, **Lambda**, and **CloudFormation** to maintain high availability, scalability, and security."
-    ]
+    ],
+    skills: ["React", "React Native", "TypeScript", "AWS", "Lambda", "S3", "DynamoDB", "AppSync", "Cognito", "CloudWatch", "API Gateway", "SNS", "SQS", "CloudFormation", "GraphQL", "NodeJS", "Fastlane", "App Center", "Instabug", "Google Analytics"]
   },
   {
     role: "Trainee Software Engineer",
@@ -38,7 +41,8 @@ const experiences = [
     responsibilities: [
       "Aided in developing new features for a project in **ReactJS**.",
       "Researched and developed multiple mobile and web applications with **React**/**React Native** as part of a research team."
-    ]
+    ],
+    skills: ["React", "React Native", "JavaScript", "Node"]
   }
 ]
 
@@ -46,7 +50,7 @@ export function WorkExperienceDetailed() {
   return (
     <div className="space-y-12">
       {experiences.map((exp, index) => (
-        <div key={index} className="bg-white shadow-md rounded-lg p-6">
+        <div key={index} className="bg-white shadow-lg rounded-lg p-6">
           <div className="flex items-center mb-4">
             <div className="w-16 h-16 mr-4">
               <Image
@@ -68,11 +72,19 @@ export function WorkExperienceDetailed() {
             <Calendar className="w-4 h-4 ml-4 mr-2" />
             <span>{exp.period}</span>
           </div>
-          <ul className="list-disc pl-5 space-y-2">
+          <ul className="list-disc pl-5 space-y-2 mb-4">
             {exp.responsibilities.map((resp, idx) => (
               <li key={idx} dangerouslySetInnerHTML={{ __html: resp.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
             ))}
           </ul>
+          <div className="mt-4">
+            <h3 className="text-lg font-semibold mb-2">Skills Used:</h3>
+            <div>
+              {exp.skills.map((skill, idx) => (
+                <SkillTag key={idx} skill={skill} />
+              ))}
+            </div>
+          </div>
         </div>
       ))}
     </div>

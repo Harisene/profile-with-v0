@@ -1,9 +1,9 @@
-import { Navbar } from "@/components/Navbar"
-import { Footer } from "@/components/Footer"
-import { HeroSection } from "@/components/HeroSection"
-import { TechStack } from "@/components/TechStack"
-import { WorkExperience } from "@/components/WorkExperience"
-import { Certificates } from "@/components/Certificates"
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { HeroSection } from "@/components/HeroSection";
+import { TechStack } from "@/components/TechStack";
+import { WorkExperience } from "@/components/WorkExperience";
+import { Certificates } from "@/components/Certificates";
 
 export default function Home() {
   return (
@@ -23,6 +23,5 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
-

@@ -1,15 +1,15 @@
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { HeroSection } from "@/components/HeroSection";
-import { TechStack } from "@/components/TechStack";
-import { WorkExperience } from "@/components/WorkExperience";
-import { Certificates } from "@/components/Certificates";
+import { Navbar } from "@/components/Navbar"
+import { Footer } from "@/components/Footer"
+import { HeroSection } from "@/components/HeroSection"
+import { TechStack } from "@/components/TechStack"
+import { WorkExperience } from "@/components/WorkExperience"
+import { Certificates } from "@/components/Certificates"
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow px-4 sm:px-6 lg:px-8">
+      <main className="flex-grow px-4 sm:px-6 lg:px-8 mt-8 mb-12">
         <div className="max-w-7xl mx-auto">
           <HeroSection />
           <TechStack />
@@ -23,5 +23,6 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  );
+  )
 }
+

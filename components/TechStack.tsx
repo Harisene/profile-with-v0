@@ -1,17 +1,5 @@
 import Image from 'next/image'
-
-const techStack = [
-  { name: 'ReactJS', src: '/tech/react.png' },
-  { name: 'NextJS', src: '/tech/next.png' },
-  { name: 'React Native', src: '/tech/react-native.png' },
-  { name: 'AWS', src: '/tech/aws.png' },
-  { name: 'Firebase', src: '/tech/firebase.png' },
-  { name: 'NodeJS', src: '/tech/node.png' },
-  { name: 'Express', src: '/tech/express.png' },
-  { name: 'TypeScript', src: '/tech/typescript.png' },
-  { name: 'MySQL', src: '/tech/mysql.png' },
-  { name: 'MongoDB', src: '/tech/mongodb.png' },
-]
+import { techStack } from '@/data/techStack'
 
 export function TechStack() {
   return (
@@ -20,12 +8,13 @@ export function TechStack() {
       <div className="flex flex-wrap justify-center gap-8">
         {techStack.map((tech) => (
           <div key={tech.name} className="flex flex-col items-center group">
-            <div className="w-16 h-16 relative transition-transform transform group-hover:scale-110">
+            <div className="w-16 h-16 flex items-center justify-center transition-transform transform group-hover:scale-110">
               <Image
                 src={tech.src}
                 alt={tech.name}
-                layout="fill"
-                objectFit="contain"
+                width={64}
+                height={64}
+                className="object-contain"
               />
             </div>
             <p className="mt-2 text-sm text-muted-foreground">{tech.name}</p>

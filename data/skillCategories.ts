@@ -22,6 +22,16 @@ export const skillCategories = [
     ]
   },
   {
+    name: "Backend",
+    skills: [
+      { name: "AWS", image: "/tech/aws.png" },
+      { name: "Firebase", image: "/tech/firebase.png" },
+      { name: "NodeJS", image: "/tech/node.png" },
+      { name: "Express", image: "/tech/express.png" },
+      { name: "Prisma ORM", image: "/tech/prisma.png" },
+    ]
+  },
+  {
     name: "AWS (Amazon Web Services)",
     skills: [
       { name: "Cognito", image: "/tech/cognito.png" },
@@ -38,15 +48,6 @@ export const skillCategories = [
       { name: "Secrets Manager", image: "/tech/secrets-manager.png" },
       { name: "Step Functions", image: "/tech/step-functions.png" },
       { name: "Route53", image: "/tech/route53.png" },
-    ]
-  },
-  {
-    name: "Backend",
-    skills: [
-      { name: "AWS", image: "/tech/aws.png" },
-      { name: "Firebase", image: "/tech/firebase.png" },
-      { name: "NodeJS", image: "/tech/node.png" },
-      { name: "Express", image: "/tech/express.png" },
     ]
   },
   {

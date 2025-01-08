@@ -1,6 +1,12 @@
+import { Metadata } from 'next'
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { SkillsGrid } from "@/components/SkillsGrid"
+
+export const metadata: Metadata = {
+  title: 'Haritha Senevirathne - Skills',
+  description: 'Discover the wide range of technical skills possessed by Haritha Senevirathne, including React, AWS, and more.',
+}
 
 export default function SkillsPage() {
   return (

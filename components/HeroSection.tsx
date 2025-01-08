@@ -44,7 +44,7 @@ export function HeroSection() {
             </div>
           </div>
           <p className="text-muted-foreground">
-            Experienced Software Engineer with 4+ years of expertise in React, React Native, Next.js, Node.js, AWS, and
+            Experienced Software Engineer expertise in React, React Native, Next.js, Node.js, AWS, and
             TypeScript. Skilled in developing scalable, high-performance applications and managing cloud infrastructure to deliver impactful solutions.
           </p>
           <div className="flex gap-4 mt-6">

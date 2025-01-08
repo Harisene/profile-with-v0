@@ -1,6 +1,12 @@
+import { Metadata } from 'next'
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { CertificatesDetailed } from "@/components/CertificatesDetailed"
+
+export const metadata: Metadata = {
+  title: 'Haritha Senevirathne - Certificates',
+  description: 'View Haritha Senevirathne\'s professional certificates and achievements in software engineering.',
+}
 
 export default function CertificatesPage() {
   return (

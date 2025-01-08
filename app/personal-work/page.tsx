@@ -1,6 +1,12 @@
+import { Metadata } from 'next'
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { PersonalWorkItems } from "@/components/PersonalWorkItems"
+
+export const metadata: Metadata = {
+  title: 'Haritha Senevirathne - Personal Work',
+  description: 'Explore Haritha Senevirathne\'s personal projects and contributions to the software development community.',
+}
 
 export default function PersonalWorkPage() {
   return (

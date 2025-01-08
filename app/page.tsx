@@ -1,9 +1,24 @@
+import { Metadata } from 'next'
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { HeroSection } from "@/components/HeroSection"
 import { TechStack } from "@/components/TechStack"
 import { WorkExperience } from "@/components/WorkExperience"
 import { Certificates } from "@/components/Certificates"
+
+export const metadata: Metadata = {
+  title: 'Haritha Senevirathne - Home',
+  description: 'Skilled Software Engineer specializing in React, React Native, AWS, Node and Typescript',
+  openGraph: {
+    title: "Haritha Senevirathne",
+    description: "Skilled Software Engineer specializing in React, React Native, AWS, Node and Typescript",
+    url: "https://profile-haritha-beige.vercel.app/",
+    siteName: "Haritha Senevirathne",
+    images: [
+      { url: `https://profile-haritha-beige.vercel.app/opengraph-image.png`, width: 1200, height: 630 },
+    ],
+  },
+}
 
 export default function Home() {
   return (

@@ -1,6 +1,12 @@
+import { Metadata } from 'next'
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { WorkExperienceDetailed } from "@/components/WorkExperienceDetailed"
+
+export const metadata: Metadata = {
+  title: 'Haritha Senevirathne - Work Experience',
+  description: 'Explore Haritha Senevirathne\'s professional journey and work experience in software engineering.',
+}
 
 export default function ExperiencePage() {
   return (

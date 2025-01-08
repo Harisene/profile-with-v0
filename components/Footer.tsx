@@ -18,8 +18,8 @@ export function Footer() {
             <Link href="/skills" className="text-sm hover:text-gray-300">
               Skills
             </Link>
-            <Link href="/projects" className="text-sm hover:text-gray-300">
-              Personal Projects
+            <Link href="/personal-work" className="text-sm hover:text-gray-300">
+              Personal Work
             </Link>
           </div>
         </div>

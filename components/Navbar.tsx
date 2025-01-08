@@ -10,7 +10,7 @@ const navItems = [
   { name: 'Work Experience', href: '/experience' },
   { name: 'Certificates', href: '/certificates' },
   { name: 'Skills', href: '/skills' },
-  { name: 'Personal Projects', href: '/projects' },
+  { name: 'Personal Work', href: '/personal-work' },
 ]
 
 export function Navbar() {
